@@ -7,7 +7,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url(../img/bg.jpg); /* Set background image */
+    background-image: url(../img/bg.jpg);
+    /* Set background image */
 }
 
 /* Navbar styling */
@@ -33,7 +34,8 @@ body {
 /* Box styling */
 .social-box {
     width: 500px;
-    height: 60px; /* Height for each social box */
+    height: 60px;
+    /* Height for each social box */
     padding: 10px;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -42,109 +44,214 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 20px auto; /* Center all boxes */
-    opacity: 0; /* Initial opacity for animation */
-    transform: translateY(20px); /* Start position for slide-up effect */
-    animation: slide-in 0.5s forwards; /* Animate the entrance */
-    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s; /* Animation for hover effects */
+    margin: 20px auto;
+    /* Center all boxes */
+    opacity: 0;
+    /* Initial opacity for animation */
+    transform: translateY(20px);
+    /* Start position for slide-up effect */
+    animation: slide-in 0.5s forwards;
+    /* Animate the entrance */
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    /* Animation for hover effects */
 }
 
 /* Entrance animation */
 @keyframes slide-in {
     to {
-        opacity: 1; /* Final opacity */
-        transform: translateY(0); /* Final position */
+        opacity: 1;
+        /* Final opacity */
+        transform: translateY(0);
+        /* Final position */
     }
 }
 
 /* Hover effect */
 .social-box:hover {
-    transform: scale(1.05) translateY(-5px); /* Scale and move up */
-    background-color: #e2e2e2; /* Change background color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Grow shadow */
+    transform: scale(1.05) translateY(-5px);
+    /* Scale and move up */
+    background-color: #e2e2e2;
+    /* Change background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Grow shadow */
 }
 
 /* Social media icon styling */
 .social-box i {
-    font-size: 35px; /* Icon size */
-    margin-right: 15px; /* Space between icon and text */
+    font-size: 35px;
+    /* Icon size */
+    margin-right: 15px;
+    /* Space between icon and text */
     text-decoration: none;
 }
 
 /* Text styling */
 .social-box .social-text {
-    font-size: 24px; /* Font size for text */
-    font-weight: bold; /* Bold text */
-    color: #333; /* Text color */
+    font-size: 24px;
+    /* Font size for text */
+    font-weight: bold;
+    /* Bold text */
+    color: #333;
+    /* Text color */
     text-decoration: none;
 }
 
 /* Icon image styling */
 .icon-img {
-    width: 35px; /* Image size */
-    margin-right: 15px; /* Space between image and text */
+    width: 35px;
+    /* Image size */
+    margin-right: 15px;
+    /* Space between image and text */
 }
 
 /* Specific icon colors */
 .facebook {
-    color: #4267B2; /* Facebook color */
+    color: #4267B2;
+    /* Facebook color */
 }
 
 .x {
-    color: #000000; /* Black color for X icon */
+    color: #000000;
+    /* Black color for X icon */
 }
 
 .linkedin {
-    color: #0077b5; /* LinkedIn color */
+    color: #0077b5;
+    /* LinkedIn color */
 }
 
 .youtube {
-    color: #FF0000; /* YouTube color */
+    color: #FF0000;
+    /* YouTube color */
 }
 
 /* Iframe styling for animated icons */
 .social-box iframe {
-    width: 50px; /* Width of animated icons */
-    height: 50px; /* Height of animated icons */
-    margin: 0 15px; /* Margin on left and right */
-    border: none; /* Remove default border */
-    outline: none; /* Remove outline */
-    overflow: hidden; /* Hide overflow */
-    background-color: #fff; /* Background color */
+    width: 50px;
+    /* Width of animated icons */
+    height: 50px;
+    /* Height of animated icons */
+    margin: 0 15px;
+    /* Margin on left and right */
+    border: none;
+    /* Remove default border */
+    outline: none;
+    /* Remove outline */
+    overflow: hidden;
+    /* Hide overflow */
+    background-color: #fff;
+    /* Background color */
 }
 
 /* Anchor styling inside social boxes */
 .social-box a {
-    text-decoration: none; /* Remove underline from links */
-    align-items: center; /* Center align items */
-    text-align: center; /* Center align text */
-    justify-content: center; /* Center justify content */
-    display: flex; /* Use flexbox for alignment */
+    text-decoration: none;
+    /* Remove underline from links */
+    align-items: center;
+    /* Center align items */
+    text-align: center;
+    /* Center align text */
+    justify-content: center;
+    /* Center justify content */
+    display: flex;
+    /* Use flexbox for alignment */
 }
 
 /* Footer styling */
 .footer {
-    background-color: #FFF; /* Light background color */
-    padding: 20px; /* Padding for the footer */
-    text-align: center; /* Center text */
-    position: relative; /* To position it properly */
-    bottom: 0; /* Stick it to the bottom */
-    width: 100%; /* Full width */
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    background-color: #FFF;
+    /* Light background color */
+    padding: 20px;
+    /* Padding for the footer */
+    text-align: center;
+    /* Center text */
+    position: relative;
+    /* To position it properly */
+    bottom: 0;
+    /* Stick it to the bottom */
+    width: 100%;
+    /* Full width */
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+    /* Shadow effect */
     justify-content: center;
+
+}
+
+@media (max-width: 768px) {
+    /* Adjust the layout for smaller screens */
+
+    /* Navbar styling */
+    .navbar {
+        height: 80px;
+        /* Adjust the height for smaller screens */
+        padding: 10px;
+        /* Adjust the padding for smaller screens */
+        justify-content: space-between;
+        /* Adjust the layout for smaller screens */
+        align-items: center;
+        /* Adjust the layout for smaller screens */
+    }
+
+    .navbar img {
+        height: 100px;
+        /* Adjust the height for smaller screens */
+        align-items: center;
+    }
+
+    /* Social box styling */
+    .social-box {
+        width: 300px;
+        /* Adjust the width for smaller screens */
+        height: 80px;
+        /* Adjust the height for smaller screens */
+        padding: 10px;
+        /* Adjust the padding for smaller screens */
+        margin: 10px;
+        /* Adjust the margin for smaller screens */
+    }
+
+    /* Footer styling */
+    .footer {
+        padding: 10px;
+        /* Adjust the padding for smaller screens */
+    }
+
+}
+
+@media (max-width: 612px) { 
+    /* Adjust the font size for smaller screens */
+    body {
+        font-size: 12px;
+    }       
+
+    /* Adjust the margin for smaller screens */
+    .navbar {
+        margin: 5px;
+    }
     
-}
+    .navbar img {
+        height: 50px;
+        align-items: center;
+    }
 
-/* Footer text styling */
-.footer p {
-    font-size: 20px; /* Font size */
-    color: #008DD2; /* Text color */
-    margin: 0; /* Remove default margin */
-    font-weight: bold; /* Bold text */
-    margin-top: 25px;
-    margin-bottom: 20px; /* Margin at the bottom */
-}
+    /* Adjust the padding for smaller screens */
+    .footer {
+        padding: 5px;
+    }   
 
-.footer p span{
-    color: #333;
+    /* Adjust the font size for smaller screens */
+    .social-text {  
+        font-size: 12px;
+    }   
+
+    /* Adjust the width for smaller screens */
+    .social-box {
+        width: 400px;
+    }       
+
+    /* Adjust the height for smaller screens */
+    .social-box {
+        height: 50px;
+    }   
+    
 }
